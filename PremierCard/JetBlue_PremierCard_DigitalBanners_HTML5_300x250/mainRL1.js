@@ -27,10 +27,10 @@ function init() {
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#copy2", "#copy3", "#copy4", "#cta"], { y: 20, autoAlpha: 0 });
-  tl1.set("#bg", {x: -52, y: -4, scale: 1.03, transformOrigin: "0px 0px", force3D: true,});
+  tl1.set("#bg", { scale: 1.03, transformOrigin: "0px 0px", force3D: true,});
   tl.set("#water_canvas", { autoAlpha: 0 });
 
-  tl1.to("#bg", 12, { x: 0, y: 0, scale: 1, ease: "none" }, 0);
+  tl1.to("#bg", 12, {  scale: 1, ease: "none" }, 0);
   gsap.to("#water_canvas", { duration: 0.7, autoAlpha: 1, ease: "power1.out",});
   startWaterEffect();
 
@@ -116,6 +116,7 @@ function drawWaterFrame(elapsed) {
     var srcH = stripHeight / displayScale;
 
     ctx.globalAlpha = 0.07 + fade * 0.12;
+
     ctx.drawImage(img, srcX, srcY, srcBandWidth, srcH, 0, dy, canvasWidth, stripHeight + 1);
 
     ctx.globalAlpha = 0.04 + fade * 0.07;
