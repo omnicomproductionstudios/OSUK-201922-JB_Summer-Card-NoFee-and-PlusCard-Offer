@@ -17,13 +17,6 @@ svg,
 video {
   position: absolute;
 }
-svg {
-  width: 300px;
-  height: 250px;
-  left: 0px;
-  top: 0px;
-  pointer-events: none;
-}
 
 #main_container {
   position: absolute;
@@ -101,31 +94,25 @@ svg {
     height: 250px;
     background-image: url(images/seashore.png);
     background-size: cover;
-    overflow: hidden;
 }
 
 .background .water {
     position: absolute;
-    top: -24px;
-    left: -24px;
-    width: 348px;
-    height: 298px;
-    background-image: url(images/seashore.png);
-    background-size: 348px 298px;
-    background-position: 0px 0px;
+    top: 0;
+    bottom: 0;
+    left: 0vw;
+    width: 300px;
+    height: 250px;
+    background-image: url(images/transparent-seashore.png);
+    background-size: cover;
     filter: url("#turbulence");
-    animation: sea-drift 18s linear infinite;
 }
 #turbulence{
     position: absolute;
     width: 300px;
-    height: 250px;
+    height: 150px;
     left: 0px;
     top: 0px;
-}
-@keyframes sea-drift {
-  0% { background-position: 0px 0px; }
-  100% { background-position: -36px 6px; }
 }
 /* Background animation end */
 
