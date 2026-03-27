@@ -1,28 +1,26 @@
 // Banner duration timer start time
 var startTime;
 
-// Timeline reference
+// Timeline references
 var tl;
 var tl1;
 
-// Init tricggered by onLoad in Body tag
 function init() {
-  // Set Banner duration timer
   startTime = new Date();
-  // Set Global Timeline
-  tl1 = new TimelineMax({});
+  
+  // Modern GSAP 3 syntax
+  tl1 = gsap.timeline();
   tl = gsap.timeline({ onComplete: endTime });
+  
   animate();
   setRollover();
 }
-
-
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#copy2", "#copy3", "#copy4", "#cta"], { y: 20, autoAlpha: 0 });
-  tl1.set("#bg", {x:-30, force3D:true});
+  tl1.set("#bg", {force3D:true});
 
-  tl1.to('#bg', 10, { x: 0, ease: "none" }, 0);
+  tl1.to('#bg', 10, { x: -40, ease: "none" }, 0);
 
   tl.addLabel("frame1", 0)
     .to(copy1, 1, { autoAlpha: 1, ease: "power1.inOut" }, "frame1")

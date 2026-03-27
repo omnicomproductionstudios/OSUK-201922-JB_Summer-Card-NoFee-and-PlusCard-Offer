@@ -81,8 +81,9 @@ video {
   height: 250px;
 }
 #bg{
-  width: 330px;
+  width: 340px;
   height: auto;
+  will-change: transform;
 }
 .copy1, .copy2, .copy3{
   font-family: "ESKlarheitGrotesk Xbd";
