@@ -17,13 +17,6 @@ svg,
 video {
   position: absolute;
 }
-svg {
-  width: 300px;
-  height: 250px;
-  left: 0px;
-  top: 0px;
-  pointer-events: none;
-}
 
 #main_container {
   position: absolute;
@@ -92,6 +85,8 @@ svg {
 }
 
 /* Background animation */
+
+/* Background animation */
 .background {
     position: absolute;
     top: 0;
@@ -114,7 +109,7 @@ svg {
     background-size: 348px 298px;
     background-position: 0px 0px;
     filter: url("#turbulence");
-    animation: sea-drift 18s linear infinite;
+    /* animation: sea-drift 18s linear infinite; */
 }
 #turbulence{
     position: absolute;
@@ -123,11 +118,7 @@ svg {
     left: 0px;
     top: 0px;
 }
-@keyframes sea-drift {
-  0% { background-position: 0px 0px; }
-  100% { background-position: -36px 6px; }
-}
-/* Background animation end */
+
 
 
 .copy1, .copy2, .copy3{

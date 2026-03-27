@@ -21,6 +21,18 @@ function animate() {
   tl.set(["#copy2", "#copy3", "#copy4", "#cta"], { y: 20, autoAlpha: 0 });
   tl.addLabel("frame1", 0)
     .to(copy1, 1, { autoAlpha: 1, ease: "power1.inOut" }, "frame1")
+
+
+// SMOOTH ONE-WAY DIAGONAL FLOW
+  tl.to("#sea-offset", {duration: 20, attr: { dx: -300, dy: -250 }, repeat: -1, ease: "none" }, 0);
+
+  // Keep the scale low (10-15) to prevent the "harsh" jagged look
+  tl.set("#sea-displace", { attr: { scale: 120 } })
+
+
+
+
+
     .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
     .to(offer, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5",)
     .addLabel("frame2", "frame1+=4")
