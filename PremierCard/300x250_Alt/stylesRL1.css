@@ -109,6 +109,7 @@ video {
     background-size: 348px 298px;
     background-position: 0px 0px;
     filter: url("#turbulence");
+    -webkit-filter: url("#turbulence");
     /* animation: sea-drift 18s linear infinite; */
 }
 #turbulence{
