@@ -44,8 +44,9 @@ function animate() {
     .to("#card", {autoAlpha:1}, "frame4")
     .to("#term2", {autoAlpha:1}, "frame4")
     .to("#lastFrame", 0.6, { y: 0, ease: Power2.easeOut }, "frame4")
+    .to("#shine", { autoAlpha:1 }, "frame")
     .to(["#copy4", "#cta"], 0.5, { autoAlpha:1, y: 0, ease: Power2.easeOut }, "frame4+=0.5")
-    .to("#shine", 0.5, { backgroundPosition: "425px 0px" }, "frame4+=1");
+    .to("#shine", 0.5, { backgroundPosition: "450px 0px" }, "frame4+=1");
 }
 
 
