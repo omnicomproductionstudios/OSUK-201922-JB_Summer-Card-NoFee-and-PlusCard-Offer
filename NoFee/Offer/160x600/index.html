@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="ad.size" content="width=160,height=600" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "%%CLICK_URL_UNESC%%";
+    </script>
+  </head>
+
+  <body onload="init()">
+    <div id="main_container">
+      <!--start main_container-->
+      <div id="main_content" class="">
+          <!-- <img src="images/f5.jpg" class="full-width" style="z-index: 111; opacity: 0.5;" alt=""> -->
+
+          <img src="images/bg.jpg" class="full-width" alt="">
+          <img src="images/tag.png" class="full-width" id="tag" alt="">
+          <div class="copy1" id="copy1">
+            <span class="line1">Enjoy</span>
+            <span class="line2">$0</span>
+            <span class="line3">annual<br>fee.</span>
+          </div>
+          <div class="copy2 hidden" id="copy2">
+            <span class="line1">3X<br>points</span>
+            <span class="line2">on eligible<br>JetBlue<br>purchases,</span>
+          </div>
+          <div class="copy21 hidden" id="copy21">
+            <span class="line1">2X<br>points</span>
+            <span class="line2">at restaurants<br>and eligible<br>grocery<br>stores,</span>
+          </div>
+          <div class="copy22 hidden" id="copy22">
+            <span class="line1">1X<br>points</span>
+            <span class="line2">on all other<br>purchases.</span>
+          </div>
+          <img src="images/card.png" class="full-width" id="card" alt="">
+          <img src="images/logo.png" class="full-width" id="logo" alt="">
+          <img src="images/logo-last.png" class="full-width" id="logo-end" alt="">
+          <div class="term" id="term">
+            Terms Apply
+          </div>
+          <!-- last frame -->
+          <div class="last-frame" id="lastFrame">
+            <div class="copy3 hidden" id="copy3">
+             Every<br>purchase has<br>a point with<br>the JetBlue<br>Card.
+            </div>
+            <div id="cta" class="hidden">Pre-Qualify Now</div>
+          </div>
+          <div id="shine"></div>
+      </div>
+
+      <div id="default_exit" class="btn" ></div>
+      <!--end main_container-->
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      document
+        .getElementById("default_exit")
+        .addEventListener("click", function () {
+          window.open(clickTag, "_blank");
+        });
+    </script>
+  </body>
+</html>
