@@ -24,8 +24,8 @@ function animate() {
 
   tl.addLabel("frame1", 0)
     .to(copy1, 1, { autoAlpha: 1, ease: "power1.inOut" }, "frame1")
-    .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
-    .addLabel("frame2", "frame1+=4")
+    .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=2.5")
+    .addLabel("frame2", "frame1+=3")
     .to(copy2, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame2")
     .to(copy2, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame2+=3.5")
     .addLabel("frame3", "frame2+=4")
