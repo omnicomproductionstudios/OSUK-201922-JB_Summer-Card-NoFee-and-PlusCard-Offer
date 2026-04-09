@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylesRL1.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "%%CLICK_URL_UNESC%%";
+    </script>
+  </head>
+
+  <body onload="init()">
+    <div id="main_container">
+        <!--start main_container-->
+        <div id="main_content" class="">
+        <!-- <img src="images/f3.png" class="full-width" style="position: absolute; top: 0px; left: 0px; opacity: .5; z-index: 1111;" alt=""> -->
+
+            <div class="background">
+                <div class="water"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <filter id="turbulence" x="0" y="0" width="348" height="298" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feTurbulence id="sea-filter" type="turbulence" numOctaves="3" seed="2" baseFrequency="0.011 0.035" result="noise"></feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+                    <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="7s" keyTimes="0;0.33;0.66;1" values="0.011 0.035;0.013 0.04;0.015 0.045;0.017 0.05" repeatCount="indefinite"></animate>
+                </filter>
+            </svg>
+            <div class="copy1" id="copy1">
+                <div class="line1">Earn 80,000 <span class="strike"></span></div>
+                <div class="line2">100,000</div>
+                <div class="line3">bonus points.</div>
+            </div>
+            <div class="copy2 hidden" id="copy2">
+                <div class="line1">That’s at least</div>
+                <div class="line2">$1,000</div>
+                <div class="line3">in award travel.</div>
+            </div>
+            <div class="copy3 hidden" id="copy3">
+                See if you <span>pre-qualify</span><br />with no impact to your<br />credit
+                score.
+            </div>
+            <img src="images/offer.png" class="full-width" id="offer" alt="" />
+            <img src="images/card.png"  id="card" alt="" />
+            <img src="images/card.png" class="hidden" id="card-end" alt="" />
+            <img src="images/logo.png" class="full-width" id="logo" alt="" />
+            <img src="images/logo-white.png" class="full-width hidden" id="logo-end" alt="" />
+
+            <div class="term" id="term">Terms Apply</div>
+            <div class="term hidden" id="term2">Terms Apply</div>
+            
+            <!-- last frame -->
+            <div class="last-frame" id="lastFrame">
+                <div class="copy4 hidden" id="copy4">
+                Reach a new altitude with<br>the <span>JetBlue Premier Card</span>.
+                </div>
+                <div id="cta" class="hidden">Pre-Qualify Now</div>
+            </div>
+            <div id="shine" class="hidden"></div>
+        </div>
+
+        <div id="default_exit" class="btn"></div>
+      <!--end main_container-->
+    </div>
+
+    <script type="text/javascript" src="mainRL1.js"></script>
+    <script type="text/javascript">
+      document
+        .getElementById("default_exit")
+        .addEventListener("click", function () {
+          window.open(clickTag, "_blank");
+        });
+    </script>
+  </body>
+</html>

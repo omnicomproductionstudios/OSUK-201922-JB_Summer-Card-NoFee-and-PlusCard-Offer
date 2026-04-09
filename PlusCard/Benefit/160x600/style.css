@@ -34,8 +34,8 @@ video {
 
 #main_content {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: -1px;
+  left: -1px;
   width: 160px;
   height: 600px;
 }
@@ -54,12 +54,6 @@ video {
   cursor: pointer;
 }
 
-.bannerSize {
-
-  width: 160px;
-  height: 600px;
-}
-
 :focus {
   outline: 0;
 }
@@ -69,8 +63,6 @@ video {
 }
 
 /* Custom Styling */
-
-/* Fonts */
 @font-face {
   font-family: "ESKlarheitGrotesk Smbd";
   src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
@@ -88,118 +80,113 @@ video {
   width: 160px;
   height: 600px;
 }
-
-.copy1, .copy2, .copy21, .copy22, .copy3{
-  width: 100%;
-  font-family: "ESKlarheitGrotesk Xbd";
-  color: #fff;
+#bg{
+  width: 340px;
+  height: auto;
   will-change: transform;
+}
+.copy1, .copy2, .copy3{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  letter-spacing: -0.1px;
+  will-change: transform;
+  position: absolute;
   text-align: center;
 }
-.copy1 span, .copy2 span, .copy21 span, .copy22 span, .copy3 span{
-  display: block;
-  position: absolute;
+.copy1 > *, .copy2 > *, .copy3 > *{
   width: 100%;
 }
-.copy1 .line1{
-  font-size: 36px;
-  top: 64px;
+.copy1 .line1, .copy2 .line1, .copy3 .line1{
+  top: 61px;
+  font-size: 24.5px;
+  line-height: 25px;
   letter-spacing: -0.5px;
 }
-.copy1 .line2{
-  font-size: 80.7px;
-  top: 104px;
-  letter-spacing: -2px;
-  color: #0000aa;
-}
-.copy1 .line3{
-  font-size: 36px;
-  top: 198px;
+.copy1 .line2, .copy2 .line2,  .copy3 .line2{
+  top: 117px;
+  font-size: 16.6px;
+  line-height: 17px;
   letter-spacing: -0.5px;
-  line-height: 37px;
-  color: #0000aa;
+}
+.copy1 .line2 span, .copy2 .line2 span{
+  color: #00e1ff;
+}
+.copy3 .line1 span{
+  color: #00e1ff;
 }
 
-.copy2 .line1{
-  top: 83px;
-  font-size: 40px;
-  line-height: 33.5px;
-  letter-spacing: -0.5px;
-}
-.copy2 .line2{
-  top: 160px;
-  font-size: 20.1px;
-  color: #0000a9;
-  letter-spacing: -0.5px;
-  line-height: 23px;
-}
-.copy21 .line1{
-  top: 85px;
-  font-size: 40px;
-  line-height: 33.5px;
-  letter-spacing: -0.5px;
-}
-.copy21 .line2{
-  top: 162px;
-  font-size: 20.1px;
-  color: #0000a9;
-  letter-spacing: -0.5px;
-  line-height: 23px;
-}
-.copy22 .line1{
-  top: 85px;
-  font-size: 40px;
-  line-height: 33.5px;
-  letter-spacing: -0.5px;
-}
-.copy22 .line2{
-  top: 162px;
-  font-size: 20.1px;
-  color: #0000a9;
-  letter-spacing: -0.5px;
-  line-height: 23px;
-}
-.copy3{
-  color: #0000aa;
-  font-size: 20px;
-  top: 81.1px;
-  line-height: 23px;
-  letter-spacing: -0.3px;
-}
 
 .last-frame{
   width: 100%;
   height: 600px;
-  /* border-top: #ff6433 solid 11px; */
+  /* border-top: #ff6433 solid 8px; */
   background-color: #fff;
   transform: translateY(600px);
   will-change: transform;
+}
+.copy4{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  top: 60px;
+  left: 0px;
+  text-align: center;
+  font-size: 24.4px;
+  line-height: 25.2px;
+  color: #0000aa;
+  letter-spacing: -0.5px;
+  will-change: transform;
+  position: absolute;
+}
+
+#logo, #logo-end{
+  width: 86px;
+  top: 324px;
+  left: 37px;
+}
+#logo-end{
+  left: 37px;
+  top: 492px;
+}
+#card1{
+  width: 140px;
+  left: 10px;
+  top: 197px;
+}
+#card2{
+  width: 140px;
+  left: 10px;
+  top: 325px;
 }
 #cta{
   font-family: "ESKlarheitGrotesk Smbd";
   background-color: #0000aa;
   display: inline-block;
-  font-size: 12.3px;
-  top: 243px;
-  left: 17px;
-  width: 126px;
+  font-size: 12.5px;
+  top: 220px;
+  left: 13px;
+  width: 131px;
   height: 35px;
   color: #fff;
   text-align: center;
-  line-height: 35px;
+  line-height: 36px;
   border-radius: 3px;
+  will-change: transform;
 }
 
 .term{
   font-family: "ESKlarheitGrotesk Smbd";
-  color: #0000aa;
+  color: #fff;
   width: 100%;
-  font-size: 6.25px;
-  top: 437px;
-  left: 112px;
+  font-size: 7.55px;
+  top: 288px;
+  left: 102px;
 }
-#termlast{
-  left: 112px;
+#term2{
+  top: 415px;
+  z-index: 1;
+  color: #0000aa;
 }
 
 /* Shine effect */
@@ -222,6 +209,6 @@ video {
   z-index: 1;
   mask-size: 160px;
 }
-#logo-end, #card, #term{
+#card2, #logo-end, #cta{
   z-index: 1;
 }

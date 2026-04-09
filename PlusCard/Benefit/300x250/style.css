@@ -1,0 +1,206 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  background-color: #000064;
+  border: 1px solid #000000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 300px;
+  height: 250px;
+}
+
+#main_content {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 300px;
+  height: 250px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#default_exit {
+  top: -1px;
+  left: -1px;
+  width: 300px;
+  height: 250px;
+  z-index: 500;
+  cursor: pointer;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Custom Styling */
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+  font-weight: normal;
+}
+
+
+.full-width{
+  width: 300px;
+  height: 250px;
+}
+#bg{
+  width: 340px;
+  height: auto;
+  will-change: transform;
+}
+.copy1, .copy2, .copy3{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  letter-spacing: -0.1px;
+  will-change: transform;
+  position: absolute;
+}
+.copy1 > *, .copy2 > *, .copy3 > *{
+  width: 100%;
+}
+.copy1 .line1, .copy2 .line1, .copy3 .line1{
+  top: 16px;
+  font-size: 20px;
+  left: 25px;
+  letter-spacing: -0.5px;
+}
+.copy1 .line2, .copy2 .line2,  .copy3 .line2{
+  top: 41px;
+  font-size: 13.6px;
+  left: 25px;
+  letter-spacing: -0.5px;
+}
+.copy1 .line2 span, .copy2 .line2 span{
+  color: #00e1ff;
+}
+.copy3 .line1 span{
+  color: #00e1ff;
+}
+
+
+.last-frame{
+  width: 100%;
+  height: 250px;
+  /* border-top: #ff6433 solid 8px; */
+  background-color: #fff;
+  transform: translateY(250px);
+  will-change: transform;
+}
+.copy4{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  top: 25px;
+  left: 22px;
+  font-size: 28.4px;
+  line-height: 34.2px;
+  color: #0000aa;
+  letter-spacing: -0.5px;
+  will-change: transform;
+  position: absolute;
+}
+
+#logo, #logo-end{
+  width: 85px;
+  top: 206px;
+  left: 191px;
+}
+#logo-end{
+  left: 24px;
+}
+#card1{
+  width: 109px;
+  left: 167px;
+  top: 93px;
+}
+#card2{
+  width: 132px;
+  left: 144px;
+  top: 120px;
+}
+#cta{
+  font-family: "ESKlarheitGrotesk Smbd";
+  background-color: #0000aa;
+  display: inline-block;
+  font-size: 11.5px;
+  top: 121px;
+  left: 23px;
+  width: 110px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 3px;
+  will-change: transform;
+}
+
+.term{
+  font-family: "ESKlarheitGrotesk Smbd";
+  color: #0000aa;
+  width: 100%;
+  font-size: 5.95px;
+  top: 165px;
+  left: 240px;
+}
+#term2{
+  top: 207px;
+  z-index: 1;
+}
+
+/* Shine effect */
+#shine {
+  width: 300px;
+  height: 250px;
+  background-image: url(./images/shine.png);
+  background-size: contain;
+  background-position: 142px 0px;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(./images/mask.png);
+  top: -10px;
+  z-index: 1;
+}
+#card2, #logo-end, #cta{
+  z-index: 1;
+}

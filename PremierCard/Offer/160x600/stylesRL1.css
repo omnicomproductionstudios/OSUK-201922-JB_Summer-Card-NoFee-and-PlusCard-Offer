@@ -1,0 +1,276 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  background-color: #000064;
+  border: 1px solid #000000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 160px;
+  height: 600px;
+}
+
+#main_content {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 160px;
+  height: 600px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#default_exit {
+  top: -1px;
+  left: -1px;
+  width: 160px;
+  height: 600px;
+  z-index: 500;
+  cursor: pointer;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Custom Styling */
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+  font-weight: normal;
+}
+
+
+.full-width{
+  width: 160px;
+  height: 600px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* Background animation */
+
+/* Background animation */
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0vw;
+    width: 160px;
+    height: 600px;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.background .water {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    width: 190px;
+    height: 600px;
+    background-image: url(images/bg.jpg);
+    background-size: 190px 600px;
+    background-position: 0px 0px;
+    filter: url("#turbulence");
+    -webkit-filter: url("#turbulence");
+    /* animation: sea-drift 18s linear infinite; */
+}
+#turbulence{
+    position: absolute;
+    width: 160px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+.copy1, .copy2, .copy3{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: -0.1px;
+  will-change: transform;
+  position: absolute;
+}
+.copy1 > *, .copy2 > *, .copy3 > *{
+  width: 100%;
+}
+.line1{
+  top: 0px;
+  font-size: 22px;
+  left: 0px;
+  letter-spacing: -0.92px;
+  color: #fff;
+}
+.line2{
+  top: 18px;
+  font-size: 38.9px;
+  left: -1px;
+  letter-spacing: -1.4px;
+  color: #000064;
+}
+.line3{
+  top: 56px;
+  font-size: 21.5px;
+  left: 0px;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+.strike{
+  position: absolute;
+  left: 69.1px;
+  top: 12.4px;
+  width: 70px;
+  height: 2px;
+  background-color: #000064;
+}
+.copy2 .line2{
+  top: 23px;
+  left: -2px;
+}
+.copy2 .line3{
+  top: 67px;
+  font-size: 21.5px;
+  line-height: 22px;
+}
+.copy3{
+  position: absolute;
+  font-size: 19.9px;
+  top: 103px;
+  left: -2px;
+  line-height: 21px;
+}
+.copy3 span{
+  color: #000064
+}
+.last-frame{
+  width: 100%;
+  height: 600px;
+  /* border-top: #ff6433 solid 8px; */
+  background-color: #000064;
+  transform: translateY(600px);
+  will-change: transform;
+  position: absolute;
+}
+#logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.copy4{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  top: 103px;
+  left: 0px;
+  text-align: center;
+  font-size: 20.8px;
+  line-height: 21px;
+  color: #fff;
+  letter-spacing: -0.5px;
+  will-change: transform;
+  position: absolute;
+}
+.copy4 span{
+  color: #00e1ff
+}
+#cta{
+  font-family: "ESKlarheitGrotesk Smbd";
+  background-color: #00e1ff;
+  display: inline-block;
+  font-size: 11.1px;
+  top: 409px;
+  left: 23.5px;
+  width: 113px;
+  height: 30px;
+  color: #000064;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 3px;
+  will-change: transform;
+}
+#card{
+  top: 293px;
+  left: 16px;
+  width: 128px;
+}
+#card-end{
+  top: 130px;
+  left: 144px;
+  width: 134px;
+}
+.term{
+  font-family: "ESKlarheitGrotesk Smbd";
+  color: #fff;
+  width: 100%;
+  font-size: 5.85px;
+  top: 376px;
+  left: 108px;
+}
+#term2{
+  top: 217px;
+  left: 242px;
+}
+/* Shine effect */
+#shine {
+  width: 160px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-image: url(./images/shine.png);
+  background-size: contain;
+  background-position: -190px 13px;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-size: 160px 600px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left;
+  mask-image: url(./images/mask.png);
+  z-index: 1;
+  mask-size: 160px;
+}
+#card, #logo-end, #logo, #cta, #term{
+  z-index: 1;
+}

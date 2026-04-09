@@ -214,43 +214,93 @@
 
     <div class="container">
       <div class="tabs">
-        <!-- <div class="tab active" onclick="openTab('option1', this)">
+        <div class="tab active" onclick="openTab('option1', this)">
           PlusCard Offer
         </div>
         <div class="tab" onclick="openTab('option2', this)">
+          PlusCard Benefit
+        </div>
+        <div class="tab" onclick="openTab('option3', this)">
           PremierCard Offer
-        </div> -->
-
-        <div class="tab active" onclick="openTab('option3', this)">
-          NoFee Benefit
         </div>
         <div class="tab" onclick="openTab('option4', this)">
+          PremierCard Benefit
+        </div>
+
+        <div class="tab" onclick="openTab('option5', this)">
+          NoFee Benefit
+        </div>
+        <div class="tab" onclick="openTab('option6', this)">
           NoFee Offer
         </div>
       </div>
 
       <div class="content-wrapper">
-        <div id="option1" class="tab-content ">
+        <div id="option1" class="tab-content active" data-name="PlusCard Offer">
           <div class="grid">
             <div class="card">
               <a
                 target="_blank"
-                href="PlusCard/JetBlue_PlusCard_DigitalBanners_HTML5_300x250/index.html"
+                href="PlusCard/Offer/300x250/index.html"
                 >300x250</a
               >
             </div>
-          </div>
-        </div>
-        <div id="option2" class="tab-content">
-          <div class="grid">
             <div class="card">
-              <a target="_blank" href="PremierCard/300x250_Alt/index.html"
-                >300x250 Alt</a
+              <a
+                target="_blank"
+                href="PlusCard/Offer/160x600/index.html"
+                >160x600</a
               >
             </div>
           </div>
         </div>
-        <div id="option3" class="tab-content active">
+        <div id="option2" class="tab-content" data-name="PlusCard Benefit">
+          <div class="grid">
+            <div class="card">
+              <a
+                target="_blank"
+                href="PlusCard/Benefit/300x250/index.html"
+                >300x250</a
+              >
+            </div>
+            <div class="card">
+              <a
+                target="_blank"
+                href="PlusCard/Benefit/160x600/index.html"
+                >160x600</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="option3" class="tab-content" data-name="PremierCard Offer">
+          <div class="grid">
+            <div class="card">
+              <a target="_blank" href="PremierCard/Offer/300x250/index.html"
+                >300x250</a
+              >
+            </div>
+            <div class="card">
+              <a target="_blank" href="PremierCard/Offer/160x600/index.html"
+                >160x600</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="option4" class="tab-content" data-name="PremierCard Benefit">
+          <div class="grid">
+            <div class="card">
+              <a target="_blank" href="PremierCard/Benefit/300x250/index.html"
+                >300x250</a
+              >
+            </div>
+            <div class="card">
+              <a target="_blank" href="PremierCard/Benefit/160x600/index.html"
+                >160x600</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="option5" class="tab-content" data-name="NoFee Benefit">
           <div class="grid">
             <div class="card">
               <a target="_blank" href="NoFee/Benefit/300x250/index.html"
@@ -264,7 +314,7 @@
             </div>
           </div>
         </div>
-        <div id="option4" class="tab-content">
+        <div id="option6" class="tab-content" data-name="NoFee Offer">
           <div class="grid">
             <div class="card">
               <a target="_blank" href="NoFee/Offer/300x250/index.html"

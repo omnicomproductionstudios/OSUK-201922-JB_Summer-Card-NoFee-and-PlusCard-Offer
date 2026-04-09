@@ -34,8 +34,8 @@ video {
 
 #main_content {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: -1px;
+  left: -1px;
   width: 160px;
   height: 600px;
 }
@@ -54,12 +54,6 @@ video {
   cursor: pointer;
 }
 
-.bannerSize {
-
-  width: 160px;
-  height: 600px;
-}
-
 :focus {
   outline: 0;
 }
@@ -69,8 +63,6 @@ video {
 }
 
 /* Custom Styling */
-
-/* Fonts */
 @font-face {
   font-family: "ESKlarheitGrotesk Smbd";
   src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
@@ -88,120 +80,140 @@ video {
   width: 160px;
   height: 600px;
 }
-
-.copy1, .copy2, .copy21, .copy22, .copy3{
-  width: 100%;
-  font-family: "ESKlarheitGrotesk Xbd";
-  color: #fff;
+#bg{
+  width: 200px;
+  height: auto;
   will-change: transform;
-  text-align: center;
 }
-.copy1 span, .copy2 span, .copy21 span, .copy22 span, .copy3 span{
-  display: block;
-  position: absolute;
+.copy1, .copy2, .copy3{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  top: 55px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: -0.1px;
+  will-change: transform;
+  position: relative;
+}
+.copy1 > *, .copy2 > *, .copy3 > *{
   width: 100%;
 }
-.copy1 .line1{
-  font-size: 36px;
-  top: 64px;
-  letter-spacing: -0.5px;
+.line1{
+  top: 0px;
+  font-size: 27px;
+  left: -1px;
+  letter-spacing: -0.92px;
+  color: #fff;
 }
-.copy1 .line2{
-  font-size: 80.7px;
-  top: 104px;
-  letter-spacing: -2px;
+.line2{
+  top: 30px;
+  font-size: 39px;
+  left: -3px;
+  letter-spacing: -1.4px;
   color: #0000aa;
 }
-.copy1 .line3{
-  font-size: 36px;
-  top: 198px;
-  letter-spacing: -0.5px;
-  line-height: 37px;
-  color: #0000aa;
+.line3{
+  top: 79px;
+  font-size: 25.8px;
+  line-height: 28px;
+  left: -1px;
+  letter-spacing: -0.8px;
+  color: #fff;
 }
-
 .copy2 .line1{
-  top: 83px;
-  font-size: 40px;
-  line-height: 33.5px;
-  letter-spacing: -0.5px;
+  top: 2px;
+  font-size: 27px;
+  line-height: 28px;
 }
 .copy2 .line2{
-  top: 160px;
-  font-size: 20.1px;
-  color: #0000a9;
-  letter-spacing: -0.5px;
-  line-height: 23px;
+  top: 61px;
 }
-.copy21 .line1{
-  top: 85px;
-  font-size: 40px;
-  line-height: 33.5px;
-  letter-spacing: -0.5px;
-}
-.copy21 .line2{
-  top: 162px;
-  font-size: 20.1px;
-  color: #0000a9;
-  letter-spacing: -0.5px;
-  line-height: 23px;
-}
-.copy22 .line1{
-  top: 85px;
-  font-size: 40px;
-  line-height: 33.5px;
-  letter-spacing: -0.5px;
-}
-.copy22 .line2{
-  top: 162px;
-  font-size: 20.1px;
-  color: #0000a9;
-  letter-spacing: -0.5px;
-  line-height: 23px;
+.copy2 .line3{
+  top: 106px;
+  font-size: 25.8px;
+  line-height: 28px;
+  left: -1px;
+  letter-spacing: -0.8px;
+  color: #fff;
 }
 .copy3{
-  color: #0000aa;
-  font-size: 20px;
-  top: 81.1px;
-  line-height: 23px;
-  letter-spacing: -0.3px;
+  position: absolute;
+  font-size: 25.3px;
+  line-height: 27px;
+  top: 58px;
+  left: 0;
 }
-
+.copy3 span{
+  color: #0000aa;
+}
 .last-frame{
   width: 100%;
   height: 600px;
-  /* border-top: #ff6433 solid 11px; */
+  /* border-top: #ff6433 solid 8px; */
   background-color: #fff;
   transform: translateY(600px);
   will-change: transform;
+}
+.card1 {
+  width: 140px;
+  height: auto;
+  top: 299px;
+  left: 10px;
+}
+.copy4{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  top: 58px;
+  left: 0;
+  text-align: center;
+  font-size: 26px;
+  line-height: 27px;
+  color: #0000aa;
+  letter-spacing: -0.5px;
+  will-change: transform;
+  position: absolute;
+}
+.copy4 span{
+  color: #0000aa;
+}
+#logo, #logo-end{
+  width: 108px;
+  top: 465px;
+  left: 26px;
+}
+#card{
+  width: 143px;
+  left: 10px;
+  top: 273px;
 }
 #cta{
   font-family: "ESKlarheitGrotesk Smbd";
   background-color: #0000aa;
   display: inline-block;
-  font-size: 12.3px;
-  top: 243px;
-  left: 17px;
-  width: 126px;
-  height: 35px;
+  font-size: 12.8px;
+  top: 203px;
+  left: 15px;
+  width: 129px;
+  height: 37px;
   color: #fff;
   text-align: center;
-  line-height: 35px;
+  line-height: 36px;
   border-radius: 3px;
+  will-change: transform;
 }
 
 .term{
   font-family: "ESKlarheitGrotesk Smbd";
-  color: #0000aa;
+  color: #fff;
   width: 100%;
-  font-size: 6.25px;
-  top: 437px;
-  left: 112px;
+  font-size: 6.2px;
+  top: 366px;
+  left: 114px;
 }
-#termlast{
-  left: 112px;
+#term2{
+  z-index: 1;
+  color: #0000aa;
 }
-
 /* Shine effect */
 #shine {
   width: 160px;
@@ -222,6 +234,6 @@ video {
   z-index: 1;
   mask-size: 160px;
 }
-#logo-end, #card, #term{
+#card, #logo-end, #cta, #term{
   z-index: 1;
 }
