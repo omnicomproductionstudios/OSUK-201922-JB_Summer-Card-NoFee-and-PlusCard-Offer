@@ -31,7 +31,7 @@ function animate() {
     .addLabel("frame3", "frame2+=4")
     .to(copy3, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame3")
     .addLabel("frame4", "frame3+=4")
-    .to("#logo-end", {autoAlpha:1}, "frame4")
+    .to(["#logo-end, #shine"], {autoAlpha:1}, "frame4")
     .to("#lastFrame", 0.6, { y: 0, ease: Power2.easeOut }, "frame4")
     .to(["#copy4", "#cta"], 0.5, { autoAlpha:1, y: 0, ease: Power2.easeOut }, "frame4+=0.5")
     .to("#shine", 0.5, { backgroundPosition: "425px 0px" }, "frame4+=1");
